@@ -1,7 +1,13 @@
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
 body {
-	margin:0;
-	padding:1px;
-	font: 18px Helvetica;
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
 }
 
 .center > p {
@@ -17,7 +23,7 @@ footer > p {
 .main {
 	display: flex;
     flex-flow: row;
-    height:100%;
+    min-height:100%;
 }
 
 .center {
@@ -31,25 +37,32 @@ footer > p {
 #leftnav_wrapper {
 	order: 1;
 	flex: 1 18%;
-	height:100%;
+	min-height:100%;
 
+	display:flex;
+	flex-flow:column;
 	background: #e580ff
 }
 
 #leftnav_top {
+	flex: 0 1 auto;
 	border-bottom:2px solid gray;
 	padding-top:10px;
 	padding-bottom:10px;
 }
 
 #leftnav_bot {
+	flex: 1 1 auto;
 	padding-top:10px;
 }
 
 #external_links {
+	flex: 0 1 auto;
+}
 
-
-	background:#FF0000;
+.nav_header {
+	padding-left:5px;
+	font-weight:bold;
 }
 
 .nobullets {	
