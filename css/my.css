@@ -24,12 +24,14 @@ footer > p {
 	display: flex;
     flex-flow: row;
     min-height:100%;
+    border-bottom:2px solid;
 }
 
 .center {
 	flex: 1 85%;
 	order: 2;
-    border:5px solid;
+
+	background:#d9d9d9;
 }
 
 /* Left navbar stuff */
@@ -41,14 +43,23 @@ footer > p {
 
 	display:flex;
 	flex-flow:column;
-	background: #e580ff
+
+	border-right:1px solid #595959;
 }
 
 #leftnav_top {
 	flex: 0 1 auto;
-	border-bottom:2px solid gray;
+	border-bottom:2px solid #595959;
 	padding-top:10px;
 	padding-bottom:10px;
+
+	font-weight:bold;
+	font-size:16px;
+}
+
+#leftnav_top > ul {
+	margin:0; padding:0;
+	padding-left:5px;
 }
 
 #leftnav_bot {
@@ -79,21 +90,12 @@ footer > p {
 	padding-right:10px;
 }
 
-/*#leftnav_wrapper {
-	border-right: 1px solid white; 
-	/* orient horizontally to left of center div 
-
-
-	/* flex within wrapper causes background to fill wrapper div 
-  	background: #36aae7;
-	display: flex;
-	flex-direction:column;
-}
-
 /* Top navbar stuff */
 
 #top_navbar {
-	margin-bottom: 1px;
+	margin-bottom: 0;
+	border-bottom:1px solid #595959;
+	background: #3D1573;
 }
 
 #top_navbar > .container-fluid {
@@ -104,14 +106,21 @@ footer > p {
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
   background-color:transparent;
-  color:#999999;
+  color: #b3b3b3;
 }
 
-.navbar-brand {
+.navbar-default .navbar-brand {
   /*stuff for centering the brand from http://www.bootply.com/98314 */
     position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
     margin: auto;
+
+    color: #b3b3b3;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #b3b3b3;
 }
