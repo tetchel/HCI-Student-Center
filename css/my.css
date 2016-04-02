@@ -17,6 +17,7 @@ footer > p {
 .main {
 	display: flex;
     flex-flow: row;
+    height:100%;
 }
 
 .center {
@@ -27,17 +28,50 @@ footer > p {
 
 /* Left navbar stuff */
 
-.leftnav {
+#leftnav_wrapper {
 	order: 1;
+	flex: 1 18%;
+	height:100%;
+
+	background: #e580ff
 }
 
-#leftnav_wrapper {
-	border-right: 1px solid white;
-	/* orient horizontally to left of center div */
-	flex: 1 15%;
-	order: 1;
+#leftnav_top {
+	border-bottom:2px solid gray;
+	padding-top:10px;
+	padding-bottom:10px;
+}
 
-	/* flex within wrapper causes background to fill wrapper div */
+#leftnav_bot {
+	padding-top:10px;
+}
+
+#external_links {
+
+
+	background:#FF0000;
+}
+
+.nobullets {	
+	list-style: none outside none;
+}
+
+.li_icon {
+	float: left;
+	padding-right:5px;
+}
+
+.li_right_icon {
+	float: right;
+	padding-right:10px;
+}
+
+/*#leftnav_wrapper {
+	border-right: 1px solid white; 
+	/* orient horizontally to left of center div 
+
+
+	/* flex within wrapper causes background to fill wrapper div 
   	background: #36aae7;
 	display: flex;
 	flex-direction:column;
