@@ -12,6 +12,7 @@ function set_navbar_title() {
 	if(curr_page.localeCompare("index.html") === 0) {
 		$('#page_title').html("John Doe's Profile");
 	}
+	//add other pages here
 	/*
 	else if(curr_page.localeCompare("profile.html") === 0) {
 		$('#page_title').html("");

@@ -67,6 +67,10 @@ footer > p {
 	padding-top:10px;
 }
 
+#incoming > .nav_header {
+	color:#00802b;
+}
+
 #external_links {
 	flex: 0 1 auto;
 }
@@ -127,6 +131,11 @@ footer > p {
 /* link */
 .navbar-default .navbar-nav > li > a {
     color: #b3b3b3;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:0;
+    margin-top:0;
+    margin-bottom:0;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
