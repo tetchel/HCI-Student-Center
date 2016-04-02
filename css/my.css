@@ -6,6 +6,7 @@ html {
 
 body {
    margin: 0px;
+   padding:0px;
    min-height: 100%;
    width: 100%;
 }
@@ -84,7 +85,7 @@ footer > p {
 	list-style: none outside none;
 }
 
-.nobullets > li:hover, .nobullets > li:focus {
+.clickable:hover {
 	text-decoration:underline;
 }
 
@@ -104,14 +105,15 @@ footer > p {
 
 /* Top navbar stuff */
 
-#top_navbar {
-	margin-bottom: 0;
+#top_navbar {	
+	padding:0;
+	margin:0;
 	border-bottom:1px solid #595959;
 	background: #3D1573;
 }
 
 #top_navbar > .container-fluid {
-	margin-left:-30px;
+	margin-left:-48px;
 }
 
 /* Removes hover response from brand since you can't click it */
@@ -127,7 +129,8 @@ footer > p {
     width: 100%;
     left: 0;
     text-align: center;
-    margin: auto;
+    margin: 0;    
+    padding-bottom:0;
 
     color: #b3b3b3;
 }
