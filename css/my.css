@@ -88,6 +88,10 @@ footer > p {
 	text-decoration:underline;
 }
 
+#pinned > li {
+   padding-bottom:6px; 
+}
+
 .li_icon {
 	float: left;
 	padding-right:5px;
