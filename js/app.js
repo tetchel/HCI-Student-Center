@@ -10,11 +10,12 @@ function set_navbar_title() {
 	var curr_page 	= pathname.substring(last_slash+1);
 
 	if(curr_page.localeCompare("index.html") === 0) {
-		$('#page_title').html("Fake Home Page");
-	}
-	else if(curr_page.localeCompare("profile.html") === 0) {
 		$('#page_title').html("John Doe's Profile");
 	}
+	/*
+	else if(curr_page.localeCompare("profile.html") === 0) {
+		$('#page_title').html("");
+	}*/
 	else {
 		alert("Something went wrong setting the navbar title ");
 	}
