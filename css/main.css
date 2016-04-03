@@ -56,12 +56,15 @@ footer > p {
   	box-shadow: 2px 4px 1px #DDD;
   	padding:10px;
   	border-radius:7px;
+  	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif*/
 }
 
-.card-title {
-    font-size: 14px;
+.card > .card-title {
+    font-size: 16px;
     font-weight: bold;
     border-bottom: 2px solid #DDD;
+    padding-bottom:5px;
+    margin-bottom:10px;
 }
 
 #left_space {
@@ -77,4 +80,9 @@ footer > p {
 .card.mono, .mono {
     font-family: "Courier New", Courier, monospace;
     color:red;
+}
+
+.linklist {
+	list-style: none outside none;
+	text-decoration:underline;
 }
