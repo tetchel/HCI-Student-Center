@@ -21,6 +21,7 @@ $(document).ready(function() {
     else if(curr_page.localeCompare("external.html") === 0) {
         to_highlight = $('#external_links');
         to_highlight.children().children().css({'color': text_color});
+        $('#external_links img:first').attr("src","icons/globe24wht.png");//bit of a hack :s
     }
     else {
         alert("Something went wrong configuring the left navbar");
