@@ -8,7 +8,7 @@
 	display:flex;
 	flex-flow:column;
 
-	border-right:1px solid #595959;
+	border-right:2px solid #595959;
     
     color:#111111;
 }
@@ -73,10 +73,9 @@
 	padding-right:10px;
 }
 
-#my_account {
-	cursor: pointer;
+#external_links {
+	width:100%;
 }
-
 /* Top navbar stuff */
 
 #top_navbar {	

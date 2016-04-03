@@ -12,8 +12,11 @@ $(document).ready(function() {
 		$('#page_title').html("John Doe's Profile");
 	}
 	else if(curr_page.localeCompare("account.html") === 0) {
-		$('#page_title').html("Finances > My Account");
+		$('#page_title').html("My Finances");
 	}
+	else if(curr_page.localeCompare("external.html") === 0) {
+        $('#page_title').html("External Links");
+    }
 	else {
 		alert("Something went wrong setting the navbar title ");
 	}
