@@ -12,7 +12,7 @@ function load_page() {
 	var curr_page 	= pathname.substring(last_slash+1);
 
 	var wss = "Western Student Centre";
-
+/*
 	if(curr_page.localeCompare("index.html") === 0) {
 		$('#page_title').html("John Doe's Profile");
         $('#left_profile').css({'background-color': "#00FF00"});
@@ -24,6 +24,7 @@ function load_page() {
 	else {
 		alert("Something went wrong setting the navbar title ");
 	}
+*/
 }
 
 //when the window is resized, call this function
