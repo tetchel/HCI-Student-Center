@@ -1,11 +1,33 @@
 $(document).ready(function() {
 	//load navbar code, then callback when it's done
-	$('#top_navbar').load("top_navbar.html", set_navbar_title);
+	$('#top_navbar').load("top_navbar.html", load_page());
 	$('#leftnav_wrapper').load("left_navbar.html");
 
 	set_center_height();
 });
 
+function load_page() {
+	var pathname 	= location.pathname;
+	var last_slash 	= pathname.lastIndexOf("/");
+	var curr_page 	= pathname.substring(last_slash+1);
+
+	var wss = "Western Student Centre";
+
+	if(curr_page.localeCompare("index.html") === 0) {
+		$('#page_title').html("John Doe's Profile");
+		document.title = "John Doe's Profile | " + wss;
+	}
+	//add other pages here
+	else if(curr_page.localeCompare("account.html") === 0) {
+		$('#page_title').html("Finances > My Account");
+		document.title = "John Doe's Finances Account | " + wss;
+	}
+	else {
+		alert("Something went wrong setting the navbar title ");
+	}
+}
+
+//when the window is resized, call this function
 $(window).resize(set_center_height);
 
 function set_center_height() {
@@ -15,20 +37,3 @@ function set_center_height() {
 	$('#center').css({'height': height+"px" })
 }
 
-function set_navbar_title() {
-	var pathname 	= location.pathname;
-	var last_slash 	= pathname.lastIndexOf("/");
-	var curr_page 	= pathname.substring(last_slash+1);
-
-	if(curr_page.localeCompare("index.html") === 0) {
-		$('#page_title').html("John Doe's Profile");
-	}
-	//add other pages here
-	/*
-	else if(curr_page.localeCompare("profile.html") === 0) {
-		$('#page_title').html("");
-	}*/
-	else {
-		alert("Something went wrong setting the navbar title ");
-	}
-}
