@@ -44,19 +44,31 @@ footer > p {
 
 #left_space {
 	order:1;
-	flex: 0 0 5%;
-}
-
-#right_space {
-	order:3;
-	flex: 0 0 5%
+	flex: 0 1 5%;
 }
 
 #content_wrapper {	
 	order:2;
-	flex: 1 0 60%;
+	flex: 1 1 60%;
 
 	height:100%;
+}
+
+#middle_space {
+    order:3;
+    flex: 0 0 5%
+}
+
+#right_content_wrapper {
+    order:4;
+    flex: 1 0 25%;
+
+    height: 100%;
+}
+
+#right_space {
+	order:5;
+	flex: 0 1 5%
 }
 
 .card {
@@ -77,30 +89,9 @@ footer > p {
     margin-bottom:10px;
 }
 
-#left_space {
-	order:1;
-	flex: 0 0 12%;
-}
-
-#right_space {
-	order:5;
-	flex: 0 0 28%
-}
-
-
 /* Profile page right cards */
 
-#right_content_wrapper {
-    order 4;
-    flex: 1 0 25%;
 
-    height: 100%;
-}
-
-#middle_space {
-    order 3;
-    flex: 0 0 5%
-}
 
 /* Misc. classes */
 
@@ -123,9 +114,4 @@ footer > p {
 
 .ext_icon {
 	padding-left:10px;
-}
-
-.urgent {
-	color:red;
-	text-decoration:bold;
 }
