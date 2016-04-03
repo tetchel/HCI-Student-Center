@@ -25,7 +25,6 @@ footer > p {
 	display: flex;
     flex-flow: row;
     min-height:100%;
-    border-bottom:2px solid;
 }
 
 #center {
@@ -35,7 +34,7 @@ footer > p {
 	display:flex;
 	flex-flow:row;
 
-	background:#b3b3b3;
+	background:#EEE;
 
 	height:100%;
 	overflow:auto;
@@ -51,11 +50,12 @@ footer > p {
 }
 
 .card {
-	height:100px;
 	margin-top:50px;
 	margin-bottom:50px;
-	background:#d9d9d9;
-	border:1px solid black;
+	background:#FFF;
+    box-shadow: 2px 4px 1px #DDD;
+    padding:10px;
+    border-radius:7px;
 }
 
 #left_space {
@@ -148,21 +148,27 @@ footer > p {
 #top_navbar {	
     padding:0;
 	margin:0;
-	border-bottom:1px solid #595959;
-	background: #3D1573;
+    border:none;
+	border-bottom:1px solid #595959; /**/
+    background:#3D1573;
 	height:64px;
+    border-radius:0;
 }
 
 #top_navbar > .container-fluid {
     padding-top: 10px;
-	margin-left:-48px;
+	margin-left:-44px;
+}
+
+#top_profile_img {
+    padding-right:4px;
 }
 
 /* Removes hover response from brand since you can't click it */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   background-color:transparent;
-  color: #b3b3b3;
+  color: #FFF;
 }
 
 .navbar-default .navbar-brand {
@@ -174,12 +180,12 @@ footer > p {
     margin: 0;    
     padding-bottom:0;
 
-    color: #b3b3b3;
+    color: #FFF;
 }
 
 /* link */
 .navbar-default .navbar-nav > li > a {
-    color: #b3b3b3;
+    color: #BBB;
     padding-left:5px;
     padding-top:5px;
     padding-bottom:0;

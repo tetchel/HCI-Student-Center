@@ -9,7 +9,8 @@ $(document).ready(function() {
 $(window).resize(set_center_height);
 
 function set_center_height() {
-	var height = window.innerHeight - $('#top_navbar').height() - 10;
+    //-1 for the navbar border
+	var height = window.innerHeight - $('#top_navbar').height() - 1;
 	
 	$('#center').css({'height': height+"px" })
 }
