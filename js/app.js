@@ -44,7 +44,7 @@ var LINK_NAMES = ["huron", "brescia", "kings"];
 function set_leftnav_pinned() {
 	LINK_NAMES.forEach(function(link_name) {		
 		var is_pinned = localStorage.getItem(link_name + "_is_pinned");
-		if(is_pinned === "false") {		
+		if(is_pinned !== "true") {		
 			$("#" + link_name + "_pinned").hide();
 		}
 	});
