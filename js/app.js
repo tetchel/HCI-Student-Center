@@ -2,6 +2,11 @@ $(document).ready(function() {
 	//load navbar code, then callback when it's done
 	$('#top_navbar').load("top_navbar.html", set_navbar_title);
 	$('#leftnav_wrapper').load("left_navbar.html");
+
+	var height = window.innerHeight - $('#top_navbar').height();
+	
+	$('#center').css({'height': height+"px" })
+
 });
 
 function set_navbar_title() {

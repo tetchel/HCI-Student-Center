@@ -21,18 +21,51 @@ footer > p {
 	text-align:center;
 }
 
-.main {
+#main {
 	display: flex;
     flex-flow: row;
     min-height:100%;
     border-bottom:2px solid;
 }
 
-.center {
+#center {
 	flex: 1 85%;
 	order: 2;
 
+	display:flex;
+	flex-flow:row;
+
+	background:#b3b3b3;
+
+	height:100%;
+	overflow:auto;
+}
+
+/* Main feed stuff */
+
+#card_wrapper {	
+	order:2;
+	flex: 1 0 90%;
+
+	height:100%;
+}
+
+.card {
+	height:100px;
+	margin-top:50px;
+	margin-bottom:50px;
 	background:#d9d9d9;
+	border:1px solid black;
+}
+
+#left_space {
+	order:1;
+	flex: 0 0 5%;
+}
+
+#right_space {
+	order:3;
+	flex: 0 0 5%
 }
 
 /* Left navbar stuff */
@@ -113,6 +146,7 @@ footer > p {
 	margin:0;
 	border-bottom:1px solid #595959;
 	background: #3D1573;
+	height:64px;
 }
 
 #top_navbar > .container-fluid {
