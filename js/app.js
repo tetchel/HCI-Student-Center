@@ -14,8 +14,11 @@ function load_page() {
 	var wss = "Western Student Centre";
 /*
 	if(curr_page.localeCompare("index.html") === 0) {
+		console.log(document.getElementById("page_title").innerHTML;
+		alert('poo in my pants');
 		$('#page_title').html("John Doe's Profile");
-        $('#left_profile').css({'background-color': "#00FF00"});
+		console.log(document.getElementById("page_title").innerHTML;
+		alert('suck my chode');
 	}
 	//add other pages here
 	else if(curr_page.localeCompare("account.html") === 0) {

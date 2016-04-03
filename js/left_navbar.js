@@ -3,13 +3,20 @@ $(document).ready(function() {
 	var last_slash 	= pathname.lastIndexOf("/");
 	var curr_page 	= pathname.substring(last_slash+1);
 
-    if(curr_page.localeCompare("index.html") === 0) {
-        $('#my_profile').css({'background-color': "#00FF00"});
+    var backg_color="#3D1573";
+    var text_color="#FFFFFF";
+
+    if(curr_page.localeCompare("index.html") === 0) {        
+        var myprofile = $('#my_profile')
+        myprofile.css({'background-color': backg_color});
+        myprofile.children().css({'color': text_color});   
     }
 	else if(curr_page.localeCompare("account.html") === 0) {
-        $('#my_account').css({'background-color': "#00FF00"});
+        var myaccount = $('#my_account');
+        myaccount.css({'background-color': backg_color});
+        myaccount.children().css({'color': text_color});
     }
-    else{
+    else {
         alert("Something went wrong configuring the left navbar");
     }
 });
