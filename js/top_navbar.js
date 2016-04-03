@@ -4,17 +4,15 @@ $('#logout').click(function() {
 });
 
 $(document).ready(function() {
-	var pathname 	= location.pathname;
-	var last_slash 	= pathname.lastIndexOf("/");
-	var curr_page 	= pathname.substring(last_slash+1);
+	var page = SCCommon.getPage();
 
-	if(curr_page.localeCompare("index.html") === 0 || (!curr_page && 0 === curr_page.length)) {
+	if(page === 0) {
 		$('#page_title').html("John Doe's Profile");
 	}
-	else if(curr_page.localeCompare("account.html") === 0) {
+	else if(page === 1) {
 		$('#page_title').html("My Finances");
 	}
-	else if(curr_page.localeCompare("external.html") === 0) {
+	else if(page === 2) {
         $('#page_title').html("External Links");
     }
 	else {

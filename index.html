@@ -19,13 +19,17 @@
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
             crossorigin="anonymous"></script>
 
-   <!-- My -->           
+   <!-- My -->              
+   <script src="js/common.js"></script> 
    <script src="js/app.js"></script> 
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
+<!--Hides the document while it loads (it is shown from app.js) -->
+<script>document.body.style.display = "none";</script>
+
 <nav id="top_navbar" class="navbar navbar-default" role="navigation">
   <!-- Filled in by JQ load -->
 </nav>
@@ -165,8 +169,7 @@
           <div class="card-title">
           Bulletin Board
           </div>
-          <h4> Important information </h4>
-          cat poo
+          <span style=color:red>$99999999 in parking tickets</span>
       </div>
   </div> <!-- End RIGHT CONTENT WRAPPER -->
   <div id="right_space"></div>

@@ -42,6 +42,16 @@ footer > p {
 
 /* Main feed stuff */
 
+#left_space {
+	order:1;
+	flex: 0 0 5%;
+}
+
+#right_space {
+	order:3;
+	flex: 0 0 5%
+}
+
 #content_wrapper {	
 	order:2;
 	flex: 1 0 60%;
@@ -60,7 +70,7 @@ footer > p {
 }
 
 .card > .card-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     border-bottom: 2px solid #DDD;
     padding-bottom:5px;
@@ -101,5 +111,21 @@ footer > p {
 
 .linklist {
 	list-style: none outside none;
+}
+
+.linklist > li > a {	
 	text-decoration:underline;
+}
+
+.pinnable { 
+	padding-left:2px;
+}
+
+.ext_icon {
+	padding-left:10px;
+}
+
+.urgent {
+	color:red;
+	text-decoration:bold;
 }
