@@ -67,3 +67,8 @@ footer > p {
 	order:3;
 	flex: 0 0 5%
 }
+
+.card.mono, .mono {
+    font-family: "Courier New", Courier, monospace;
+    color:red;
+}

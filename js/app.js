@@ -15,6 +15,7 @@ function load_page() {
 
 	if(curr_page.localeCompare("index.html") === 0) {
 		$('#page_title').html("John Doe's Profile");
+        $('#left_profile').css({'background-color': "#00FF00"});
 	}
 	//add other pages here
 	else if(curr_page.localeCompare("account.html") === 0) {
@@ -32,5 +33,5 @@ function set_center_height() {
     //-1 for the navbar border
 	var height = window.innerHeight - $('#top_navbar').height() - 1;
 	
-	$('#center').css({'height': height+"px" })
+	$('#center').css({'height': height+"px" });
 }
