@@ -88,6 +88,10 @@ footer > p {
 	list-style: none outside none;
 }
 
+.nobullets > li > a {
+    color: #111111
+}
+
 .nobullets > li > a:hover {
     text-decoration:underline;
 }
