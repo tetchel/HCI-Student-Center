@@ -15,12 +15,10 @@ function load_page() {
 
 	if(curr_page.localeCompare("index.html") === 0) {
 		$('#page_title').html("John Doe's Profile");
-		document.title = "John Doe's Profile | " + wss;
 	}
 	//add other pages here
 	else if(curr_page.localeCompare("account.html") === 0) {
 		$('#page_title').html("Finances > My Account");
-		document.title = "John Doe's Finances Account | " + wss;
 	}
 	else {
 		alert("Something went wrong setting the navbar title ");
@@ -36,4 +34,3 @@ function set_center_height() {
 	
 	$('#center').css({'height': height+"px" })
 }
-
