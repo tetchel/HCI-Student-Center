@@ -44,7 +44,7 @@ footer > p {
 
 #content_wrapper {	
 	order:2;
-	flex: 1 0 90%;
+	flex: 1 0 60%;
 
 	height:100%;
 }
@@ -73,9 +73,26 @@ footer > p {
 }
 
 #right_space {
-	order:3;
+	order:5;
 	flex: 0 0 5%
 }
+
+
+/* Profile page right cards */
+
+#right_content_wrapper {
+    order 4;
+    flex: 1 0 25%;
+
+    height: 100%;
+}
+
+#middle_space {
+    order 3;
+    flex: 0 0 5%
+}
+
+/* Misc. classes */
 
 .card.mono, .mono {
     font-family: "Courier New", Courier, monospace;
