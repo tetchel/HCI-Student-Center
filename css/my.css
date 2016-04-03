@@ -46,6 +46,8 @@ footer > p {
 	flex-flow:column;
 
 	border-right:1px solid #595959;
+    
+    color:#111111;
 }
 
 #leftnav_top {
@@ -85,8 +87,8 @@ footer > p {
 	list-style: none outside none;
 }
 
-.clickable:hover {
-	text-decoration:underline;
+.nobullets > li > a:hover {
+    text-decoration:underline;
 }
 
 #pinned > li {
@@ -106,13 +108,14 @@ footer > p {
 /* Top navbar stuff */
 
 #top_navbar {	
-	padding:0;
+    padding:0;
 	margin:0;
 	border-bottom:1px solid #595959;
 	background: #3D1573;
 }
 
 #top_navbar > .container-fluid {
+    padding-top: 10px;
 	margin-left:-48px;
 }
 
