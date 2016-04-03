@@ -8,7 +8,7 @@ $(document).ready(function() {
 	var last_slash 	= pathname.lastIndexOf("/");
 	var curr_page 	= pathname.substring(last_slash+1);
 
-	if(curr_page.localeCompare("index.html") === 0) {
+	if(curr_page.localeCompare("index.html") === 0 || (!curr_page && 0 === curr_page.length)) {
 		$('#page_title').html("John Doe's Profile");
 	}
 	else if(curr_page.localeCompare("account.html") === 0) {

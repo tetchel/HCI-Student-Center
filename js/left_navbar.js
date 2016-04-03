@@ -3,13 +3,15 @@ $(document).ready(function() {
 	var last_slash 	= pathname.lastIndexOf("/");
 	var curr_page 	= pathname.substring(last_slash+1);
 
+    //highlight the current page in the left navbar
+    var to_highlight;
+
     var backg_color="#3D1573";
     var text_color="#FFFFFF";
 
-    var to_highlight;
-
-    if(curr_page.localeCompare("index.html") === 0) {        
-        to_highlight = $('#my_profile')
+    //each to_highlight has the same background but different children
+    if(curr_page.localeCompare("index.html") === 0 || (!curr_page && 0 === curr_page.length)) {        
+        to_highlight = $('#my_profile');
         to_highlight.children().css({'color': text_color});   
     }
 	else if(curr_page.localeCompare("account.html") === 0) {
