@@ -34,6 +34,14 @@
 	padding-left:5px;
 }
 
+#leftnav_top > ul > a {
+    color: #111111
+}
+
+#leftnav_top > ul > a > li {	
+	padding-bottom:5px;	
+}
+
 #leftnav_bot {
 	flex: 1 2 auto;
 	padding-top:10px;
