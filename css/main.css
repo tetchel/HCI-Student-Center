@@ -58,6 +58,12 @@ footer > p {
   	border-radius:7px;
 }
 
+.card-title {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #DDD;
+}
+
 #left_space {
 	order:1;
 	flex: 0 0 5%;
