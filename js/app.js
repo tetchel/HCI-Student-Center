@@ -12,22 +12,6 @@ function load_page() {
 	var curr_page 	= pathname.substring(last_slash+1);
 
 	var wss = "Western Student Centre";
-/*
-	if(curr_page.localeCompare("index.html") === 0) {
-		console.log(document.getElementById("page_title").innerHTML;
-		alert('poo in my pants');
-		$('#page_title').html("John Doe's Profile");
-		console.log(document.getElementById("page_title").innerHTML;
-		alert('suck my chode');
-	}
-	//add other pages here
-	else if(curr_page.localeCompare("account.html") === 0) {
-		$('#page_title').html("Finances > My Account");
-	}
-	else {
-		alert("Something went wrong setting the navbar title ");
-	}
-*/
 }
 
 //when the window is resized, call this function
