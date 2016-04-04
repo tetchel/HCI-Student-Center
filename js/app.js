@@ -1,4 +1,4 @@
-//YOU MUST INCLUDE common.js IN ALL HTML FILES BEFORE THIS ONE
+//YOU MUST INCLUDE common.js IN ALL HTML FILES BEFORE THIS
 
 $(document).ready(function() {
 	//load navbar code, then callback when it's done
@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$('#leftnav_wrapper').load("left_navbar.html", function() {
 		set_leftnav_pinned();
 		var page = getPage();
-		if(page === 2) {
+		if(page === pagesEnum.EXTERNAL) {
 			set_pin_listeners();
 		}
 		set_center_height();		
@@ -42,6 +42,12 @@ function set_leftnav_pinned() {
 		if(is_pinned !== "true") {		
 			$("#" + link_name + "_pinned").hide();
 		}
+		else {
+			if(localStorage.getItem("item_to_highlight") === link_name) {
+				localStorage.setItem("item_to_highlight", "none");
+				$("#" + link_name + "_pinned").css({ "background": "#00FF00" });
+			}
+		}
 	});
 }
 
@@ -56,7 +62,7 @@ function set_pin_listeners() {
 			black.css('display', 'none');
 			red.css('display', 'inline');
 			red.click(function() {
-				localStorage.setItem(link_name + "_is_pinned", "false");			
+				localStorage.setItem(link_name + "_is_pinned", "false");	
 				location.reload();
 			});
 		}
@@ -64,7 +70,8 @@ function set_pin_listeners() {
 			red.css('display', 'none');
 			black.css('display', 'inline');
 			black.click(function() {
-				localStorage.setItem(link_name + "_is_pinned", "true");
+				localStorage.setItem(link_name + "_is_pinned", "true");				
+				localStorage.setItem("item_to_highlight", link_name);		
 				location.reload();
 			});
 		}

@@ -6,9 +6,10 @@ $('#logout').click(function() {
 $(document).ready(function() {
 	var page = getPage();
 
+	$('#my_profile_top').html(first_name + "'s Profile");
+
 	if(page === pagesEnum.INDEX) {
 		$('#page_title').html("Stu Dent's Profile");
-		$('#my_profile_top').html(first_name + "'s Profile");
 	}
 	else if(page === pagesEnum.ACCOUNT) {
 		$('#page_title').html("Finances");
