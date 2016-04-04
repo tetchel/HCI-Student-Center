@@ -2,7 +2,7 @@
 
 #leftnav_wrapper {
 	order: 1;
-	flex: 1 1 auto;
+	flex: 1 1 18%;
 	min-height:100%;
 
 	display:flex;
@@ -23,7 +23,7 @@
 	font-size:16px;
 }
 
-#pinned > li:hover, #leftnav_bot li:hover, #external_links:hover {
+#pinned > a > li:hover, #leftnav_bot li:hover, #external_links:hover {
    background-color: #F2E6FF
 }
 
