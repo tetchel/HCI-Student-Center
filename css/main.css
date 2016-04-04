@@ -44,31 +44,31 @@ footer > p {
 
 #left_space {
 	order:1;
-	flex: 0 1 12%;
+	flex: 1 5 15%;
 }
 
 #content_wrapper {	
 	order:2;
-	flex: 1 1 60%;
+	flex: 2 1 60%;
 
 	height:100%;
 }
 
 #middle_space {
     order:3;
-    flex: 0 5 5%
+    flex: 1 5 5%
 }
 
 #right_content_wrapper {
     order:4;
-    flex: 1 1 25%;
-
+    flex: 2 1 25%;
+ 
     height: 100%;
 }
 
 #right_space {
 	order:5;
-	flex: 0 1 28%
+	flex: 1 5 15%
 }
 
 .card {
