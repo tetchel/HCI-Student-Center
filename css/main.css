@@ -89,6 +89,11 @@ footer > p {
     margin-bottom:10px;
 }
 
+#greetings {
+	text-decoration: bold;
+	font-size:16px;
+}
+
 #enable_incoming_card {
 	display:none;
 	color:red;
