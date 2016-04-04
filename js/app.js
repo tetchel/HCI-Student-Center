@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	//load navbar code, then callback when it's done
-	//load navbar code
 	$('#top_navbar').load("top_navbar.html");
+
 	$('#leftnav_wrapper').load("left_navbar.html", function() {
 		set_leftnav_pinned();
 		var page = SCCommon.getPage();
@@ -9,7 +9,7 @@ $(document).ready(function() {
 			set_pin_listeners();
 		}
 		set_center_height();		
-    	set_card_width();
+    	set_card_width(page);
 
     	$('#sao').click(function() {
 			//same behaviour as the real thing :)
@@ -23,15 +23,10 @@ $(document).ready(function() {
 });
 
 //make spaces around card smaller to fit in bulletin board on index.html
-function set_card_width() {
-	var pathname 	= location.pathname;
-	var last_slash 	= pathname.lastIndexOf("/");
-	var curr_page 	= pathname.substring(last_slash+1);
-	var wss = "Western Student Centre";
-
+function set_card_width(pagenum) {
     var flex_value = "0 0 5%"
 
-    if(curr_page.localeCompare("index.html") === 0) {
+    if(pagenum === 0) {
         $('#left_space').css({'flex': flex_value});
         $('#right_space').css({'flex': flex_value});
     }

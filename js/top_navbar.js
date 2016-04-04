@@ -10,7 +10,7 @@ $(document).ready(function() {
 		$('#page_title').html("John Doe's Profile");
 	}
 	else if(page === 1) {
-		$('#page_title').html("My Finances");
+		$('#page_title').html("Finances");
 	}
 	else if(page === 2) {
         $('#page_title').html("External Links");
