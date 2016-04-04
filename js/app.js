@@ -10,6 +10,11 @@ $(document).ready(function() {
 		set_center_height();		
     	set_card_width();
 
+    	$('#sao').click(function() {
+			//same behaviour as the real thing :)
+			alert("No SAO Form");
+		});
+
 		$('body').fadeIn("fast");
 	});
 });

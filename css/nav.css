@@ -95,6 +95,11 @@
 	padding-right:5px;
 }
 
+#sao {
+	cursor:pointer;
+	color:#0000FF;
+}
+
 /* Top navbar stuff */
 
 #top_navbar {	
