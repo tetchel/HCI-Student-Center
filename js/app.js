@@ -45,7 +45,7 @@ function set_leftnav_pinned() {
 		else {
 			if(localStorage.getItem("item_to_highlight") === link_name) {
 				localStorage.setItem("item_to_highlight", "none");
-				$("#" + link_name + "_pinned").css({ "background": "#00FF00" });
+				$("#" + link_name + "_pinned").css({ "background": "#FFFF66" });
 			}
 		}
 	});
