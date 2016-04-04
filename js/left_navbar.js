@@ -15,10 +15,12 @@ $(document).ready(function() {
     }
     else if(page === 1) {
         to_highlight = $('#my_account');
+        to_highlight.css({'color': text_color});
         to_highlight.children().css({'color': text_color});
     }
     else if(page === 2) {
         to_highlight = $('#external_links');
+        to_highlight.children().css({'color': text_color});
         to_highlight.children().children().css({'color': text_color});
         $('#external_links img:first').attr("src","icons/globe24wht.png");//bit of a hack :s
     }
