@@ -96,6 +96,7 @@ footer > p {
 
 #enable_incoming_card > span:hover {
     text-decoration:underline;
+    cursor:pointer;
 }
 
 /* Bulletin board */
