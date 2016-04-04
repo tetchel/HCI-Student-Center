@@ -44,7 +44,7 @@ footer > p {
 
 #left_space {
 	order:1;
-	flex: 1 5 15%;
+	flex: 1 5 12%;
 }
 
 #content_wrapper {	
@@ -68,7 +68,7 @@ footer > p {
 
 #right_space {
 	order:5;
-	flex: 1 5 15%
+	flex: 1 5 28%
 }
 
 .card {
