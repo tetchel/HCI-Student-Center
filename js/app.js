@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     	$('#sao').click(function() {
 			//same behaviour as the real thing :)
-			alert("No SAO Form");
+			alert("No SAO Form found");
 		});
 
     	set_incoming_students(page);
