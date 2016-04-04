@@ -4,15 +4,16 @@ $('#logout').click(function() {
 });
 
 $(document).ready(function() {
-	var page = SCCommon.getPage();
+	var page = getPage();
 
-	if(page === 0) {
-		$('#page_title').html("John Doe's Profile");
+	if(page === pagesEnum.INDEX) {
+		$('#page_title').html("Stu Dent's Profile");
+		$('#my_profile_top').html(first_name + "'s Profile");
 	}
-	else if(page === 1) {
+	else if(page === pagesEnum.ACCOUNT) {
 		$('#page_title').html("Finances");
 	}
-	else if(page === 2) {
+	else if(page === pagesEnum.EXTERNAL) {
         $('#page_title').html("External Links");
     }
 	else {

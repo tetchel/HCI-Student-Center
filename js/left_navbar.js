@@ -5,20 +5,21 @@ $(document).ready(function() {
     var backg_color="#3D1573";
     var text_color="#FFFFFF";
 
-    var page = SCCommon.getPage();
+    var page = getPage();
+    $('#my_profile_left').html(first_name + "'s Profile");
 
     //each to_highlight has the same background but different children
-    if(page === 0) {        
+    if(page === pagesEnum.INDEX) {        
         to_highlight = $('#my_profile');        
         to_highlight.css({'color': text_color});   
         to_highlight.children().css({'color': text_color});   
     }
-    else if(page === 1) {
+    else if(page === pagesEnum.ACCOUNT) {
         to_highlight = $('#my_account');
         to_highlight.css({'color': text_color});
         to_highlight.children().css({'color': text_color});
     }
-    else if(page === 2) {
+    else if(page === pagesEnum.EXTERNAL) {
         to_highlight = $('#external_links');
         to_highlight.children().css({'color': text_color});
         to_highlight.children().children().css({'color': text_color});

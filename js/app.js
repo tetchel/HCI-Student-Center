@@ -1,10 +1,12 @@
+//YOU MUST INCLUDE common.js IN ALL HTML FILES BEFORE THIS ONE
+
 $(document).ready(function() {
 	//load navbar code, then callback when it's done
 	$('#top_navbar').load("top_navbar.html");
 
 	$('#leftnav_wrapper').load("left_navbar.html", function() {
 		set_leftnav_pinned();
-		var page = SCCommon.getPage();
+		var page = getPage();
 		if(page === 2) {
 			set_pin_listeners();
 		}
