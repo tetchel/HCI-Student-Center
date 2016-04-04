@@ -71,7 +71,7 @@ function set_pin_listeners() {
 			black.css('display', 'inline');
 			black.click(function() {
 				localStorage.setItem(link_name + "_is_pinned", "true");				
-				localStorage.setItem("item_to_highlight", link_name);		
+				localStorage.setItem	("item_to_highlight", link_name);		
 				location.reload();
 			});
 		}

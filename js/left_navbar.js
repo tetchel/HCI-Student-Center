@@ -9,12 +9,7 @@ $(document).ready(function() {
     $('#my_profile_left').html(first_name + "'s Profile");
 
     //each to_highlight has the same background but different children
-    if(page === pagesEnum.INDEX) {        
-        to_highlight = $('#my_profile');        
-        to_highlight.css({'color': text_color});   
-        to_highlight.children().css({'color': text_color});   
-    }
-    else if(page === pagesEnum.ACCOUNT) {
+    if(page === pagesEnum.ACCOUNT) {
         to_highlight = $('#my_account');
         to_highlight.css({'color': text_color});
         to_highlight.children().css({'color': text_color});
@@ -25,8 +20,41 @@ $(document).ready(function() {
         to_highlight.children().children().css({'color': text_color});
         $('#external_links img:first').attr("src","icons/globe24wht.png");//bit of a hack :s
     }
+    else if(page === pagesEnum.RECORDS) {
+        to_highlight = $('#my_records');        
+        to_highlight.css({'color': text_color});
+        to_highlight.children().css({'color': text_color});
+    }
+    else if(page === pagesEnum.COURSES) {
+        to_highlight = $('#courses');
+        to_highlight.css({'color': text_color});
+        to_highlight.children().css({'color': text_color});
+    }
+    else if(page === pagesEnum.ITR) {
+        to_highlight = $('#itr');
+        to_highlight.css({'color': text_color});
+        to_highlight.children().css({'color': text_color});
+    }
+    else if(page === pagesEnum.LETTERS) {
+        to_highlight = $('#letters');
+        to_highlight.css({'color': text_color});
+        to_highlight.children().css({'color': text_color});
+    }
+    else if(page === pagesEnum.GS) {
+        to_highlight = $('#gs');
+        to_highlight.css({'color': text_color});
+        to_highlight.children().css({'color': text_color});
+    }
+    else if(page === pagesEnum.TAXES) {
+        to_highlight = $('#taxes');
+        to_highlight.css({'color': text_color});
+        to_highlight.children().css({'color': text_color});
+    }
+    //default case is index.html
     else {
-        alert("Something went wrong configuring the left navbar");
+        to_highlight = $('#my_profile')
+        to_highlight.css({'color': text_color});   
+        to_highlight.children().css({'color': text_color});  
     }
     //same change for any to_highlight
     to_highlight.css({ 'background-color': backg_color});
