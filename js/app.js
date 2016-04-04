@@ -4,7 +4,8 @@ $(document).ready(function() {
 	$('#top_navbar').load("top_navbar.html");
 	$('#leftnav_wrapper').load("left_navbar.html", function() {
 		set_leftnav_pinned();
-		if(SCCommon.getPage() === 2) {
+		var page = SCCommon.getPage();
+		if(page === 2) {
 			set_pin_listeners();
 		}
 		set_center_height();		
@@ -14,6 +15,8 @@ $(document).ready(function() {
 			//same behaviour as the real thing :)
 			alert("No SAO Form");
 		});
+
+    	set_incoming_students(page);
 
 		$('body').fadeIn("fast");
 	});
@@ -69,6 +72,31 @@ function set_pin_listeners() {
 			});
 		}
 	});
+}
+
+function set_incoming_students(pagenum) {
+    if(localStorage.getItem("show_incoming") !== "false") {
+		$('#hide_incoming').click(function() {
+			var confirmed = confirm("Are you sure you want to hide Incoming Students? " +
+				"This action can be reversed on the External Links page for now.");
+			if(confirmed) {
+				$('#incoming').css('display', 'none');
+				localStorage.setItem("show_incoming", "false");
+				//only reload if on External page (to show enable button)
+				if(pagenum === 2)
+					location.reload();
+			}
+		});
+	}
+	else {
+		$('#incoming').css('display', 'none');
+		$('#enable_incoming_card').css('display', 'inline');
+		$('#enable_incoming').click(function() {				
+			$('#incoming').css('display', 'inline');
+			localStorage.setItem("show_incoming", "true");
+			location.reload();
+		});
+	}
 }
 
 //when the window is resized, call this function

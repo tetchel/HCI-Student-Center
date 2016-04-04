@@ -89,6 +89,15 @@ footer > p {
     margin-bottom:10px;
 }
 
+#enable_incoming_card {
+	display:none;
+	color:red;
+}
+
+#enable_incoming_card > span:hover {
+    text-decoration:underline;
+}
+
 /* Bulletin board */
 .bulletin_button { 
     float:right;

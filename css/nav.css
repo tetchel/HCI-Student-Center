@@ -51,7 +51,8 @@
 	color:#0000FF;
 }
 
-#incoming > .nav_header {
+#incoming > .nav_header, 
+#hide_incoming {
 	color:#00802b;
 }
 
@@ -98,6 +99,16 @@
 #sao {
 	cursor:pointer;
 	color:#0000FF;
+}
+
+#sao:hover, #hide_incoming:hover {	
+	text-decoration: underline;
+}
+
+#hide_incoming {
+	float:right;
+	padding-right: 5px;
+	cursor:pointer;
 }
 
 /* Top navbar stuff */
