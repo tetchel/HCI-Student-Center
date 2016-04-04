@@ -89,6 +89,11 @@ footer > p {
     margin-bottom:10px;
 }
 
+/* Bulliten board */
+.bulliten_button { 
+    float:right;
+}
+
 /* Misc. classes */
 
 .card.mono, .mono {
