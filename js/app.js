@@ -29,16 +29,6 @@ function set_card_width() {
     }
 }
 
-//when the window is resized, call this function
-$(window).resize(set_center_height);
-
-function set_center_height() {
-    //-1 for the navbar border
-	var height = window.innerHeight - $('#top_navbar').height() - 1;
-	
-	$('#center').css({'height': height+"px" });
-}
-
 var LINK_NAMES = ["huron", "brescia", "kings"];	
 
 function set_leftnav_pinned() {
@@ -74,4 +64,14 @@ function set_pin_listeners() {
 			});
 		}
 	});
+}
+
+//when the window is resized, call this function
+$(window).resize(set_center_height);
+
+function set_center_height() {
+    //-1 for the navbar border
+	var height = window.innerHeight - $('#top_navbar').height() - 1;
+	
+	$('#center').css({'height': height+"px" });
 }

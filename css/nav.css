@@ -2,7 +2,7 @@
 
 #leftnav_wrapper {
 	order: 1;
-	flex: 1 1 20%;
+	flex: 1 1 auto;
 	min-height:100%;
 
 	display:flex;
@@ -23,7 +23,6 @@
 	font-size:16px;
 }
 
-/* TODO: make this work well */
 #pinned > li:hover, #leftnav_bot li:hover, #external_links:hover {
    background-color: #F2E6FF
 }
@@ -47,12 +46,13 @@
 	padding-top:10px;
 }
 
-#incoming > .nav_header {
-	color:#00802b;
+#leftnav_bot > div > ul > a,
+#external_links {
+	color:#0000FF;
 }
 
-#external_links {
-	flex: 0 1 auto;
+#incoming > .nav_header {
+	color:#00802b;
 }
 
 .nav_header {
@@ -88,7 +88,13 @@
 
 #external_links {
 	width:100%;
+	flex: 0 1 auto;
 }
+
+#external_links > span > img {
+	padding-right:5px;
+}
+
 /* Top navbar stuff */
 
 #top_navbar {	

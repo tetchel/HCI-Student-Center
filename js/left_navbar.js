@@ -9,7 +9,8 @@ $(document).ready(function() {
 
     //each to_highlight has the same background but different children
     if(page === 0) {        
-        to_highlight = $('#my_profile');
+        to_highlight = $('#my_profile');        
+        to_highlight.css({'color': text_color});   
         to_highlight.children().css({'color': text_color});   
     }
     else if(page === 1) {
