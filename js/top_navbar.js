@@ -27,7 +27,7 @@ $(document).ready(function() {
         $('#page_title').html("Intent to Register");
     }
     else if(page === pagesEnum.LETTERS) {        
-        $('#page_title').html("Official Western Letters");
+        $('#page_title').html("Letters &amp; Transcripts ");
     }
     else if(page === pagesEnum.GS) {        
         $('#page_title').html("Graduate Studies");
