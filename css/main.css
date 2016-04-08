@@ -89,6 +89,19 @@ footer > p {
     margin-bottom:10px;
 }
 
+.contact_header {
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.contact_header > button {
+	float:right;
+	padding:2px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-right:50px;
+}
+
 #greetings {
 	text-decoration: bold;
 	font-size:16px;
