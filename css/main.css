@@ -52,6 +52,7 @@ footer > p {
 	flex: 2 1 60%;
 
 	height:100%;
+    min-width: 550px;
 }
 
 #middle_space {
@@ -95,12 +96,17 @@ footer > p {
 	color:#0000FF;
 }
 
-.card > img {
+.card > img,
+.card > table {
 	width:100%;
 }
 
 .card > a > img {
 	width:100%;
+}
+
+.table_button {
+    margin: 5px 1px;
 }
 
 .contact_header {
@@ -121,6 +127,14 @@ footer > p {
 #enable_incoming_card > span:hover {
     text-decoration:underline;
     cursor:pointer;
+}
+
+#drop_table tr:not(:first-child):hover {
+    background-color: #F2E6FF;
+}
+
+#drop_table > th, td {
+    border-bottom: 1px solid #DDD;
 }
 
 /* Bulletin board */

@@ -24,7 +24,7 @@
 }
 
 #pinned > a > li:hover, #leftnav_bot li:hover, #external_links:hover {
-   background-color: #F2E6FF
+   background-color: #F2E6FF;
 }
 
 #leftnav_top > ul {

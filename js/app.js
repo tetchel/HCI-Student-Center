@@ -12,13 +12,29 @@ $(document).ready(function() {
 		}
 		set_center_height();		
     	set_card_width(page);
+    	set_incoming_students(page);
 
     	$('#sao').click(function() {
 			//same behaviour as the real thing :)
 			alert("No SAO Form found");
 		});
 
-    	set_incoming_students(page);
+    	$('#drop_courses').click(function() {
+            var msg = "Are you sure you wish to drop the following course(s)?";
+            $('.droppable').each(function(i, obj) {
+                if ($(this).is(":checked")) {
+                    var parent = $(this).parent().parent();
+                    var course_code = parent.find(':nth-child(2)').html();
+                    var course_name = parent.find(':nth-child(3)').html();
+                    msg += "\n\t" +  "- " + course_code + ": " + course_name;
+                }
+            });
+			var confirm_drop = confirm(msg);
+
+            if(confirm_drop) {
+                alert("I'm sorry to hear that.");
+            }
+		});
 
 		$('body').fadeIn("fast");
 	});
@@ -28,9 +44,10 @@ $(document).ready(function() {
 function set_card_width(pagenum) {
     var flex_value = "0 0 5%"
 
-    if(pagenum === 0) {
+    if(pagenum === pagesEnum.INDEX) {
         $('#left_space').css({'flex': flex_value});
         $('#right_space').css({'flex': flex_value});
+        $('#content_wrapper').css({'min-width': "400px"});
     }
 }
 
