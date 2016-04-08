@@ -89,6 +89,12 @@ footer > p {
     margin-bottom:10px;
 }
 
+#change_contact {
+	float:right;
+	margin-top:2em;
+	color:#0000FF;
+}
+
 .card > img {
 	width:100%;
 }
@@ -100,14 +106,6 @@ footer > p {
 .contact_header {
 	text-decoration:underline;
 	font-weight:bold;
-}
-
-.contact_header > button {
-	float:right;
-	padding:2px;
-	padding-left:15px;
-	padding-right:15px;
-	margin-right:50px;
 }
 
 #greetings {
