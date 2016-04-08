@@ -164,3 +164,7 @@ footer > p {
 .ext_icon {
 	padding-left:10px;
 }
+
+.noindent {
+	padding-left:0;
+}
