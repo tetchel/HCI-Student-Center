@@ -40,6 +40,14 @@ $(document).ready(function() {
             alert('Printing not yet available');
 		});
 
+		$(document).on('click', '#change_contact', function() {
+            alert('Function not yet available');
+		});
+
+		$(document).on('click', '#search_courses', function() {
+            alert('Function not yet available');
+		});
+
 		$('body').fadeIn("fast");
 	});
 });
