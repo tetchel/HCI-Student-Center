@@ -90,6 +90,13 @@ footer > p {
     margin-bottom:10px;
 }
 
+.card > .top_of_page {
+	text-align:center;
+	padding-top:10px;
+	margin-top:10px;
+	border-top:2px solid #DDD;
+}
+
 .card-title > button {	
 	float:right;
 }
