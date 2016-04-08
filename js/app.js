@@ -36,6 +36,10 @@ $(document).ready(function() {
             }
 		});
 
+		$(document).on('click', '#print', function() {
+            alert('Printing not yet available');
+		});
+
 		$('body').fadeIn("fast");
 	});
 });

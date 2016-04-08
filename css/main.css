@@ -181,3 +181,8 @@ table {
 .noindent {
 	padding-left:0;
 }
+
+#print {
+	float:right;
+	cursor:pointer;
+}
