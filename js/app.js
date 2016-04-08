@@ -48,6 +48,10 @@ $(document).ready(function() {
             alert('Function not yet available');
 		});
 
+		$(document).on('click', '#request_transcript', function() {
+            alert('Function not yet available');
+		});
+
 		$('body').fadeIn("fast");
 	});
 });
