@@ -47,8 +47,9 @@
 }
 
 #leftnav_bot > div > ul > a,
-#external_links {
-	color:#0000FF;
+#external_links,
+#sao {
+	color:#6600cc;
 }
 
 #incoming > .nav_header, 
@@ -98,7 +99,6 @@
 
 #sao {
 	cursor:pointer;
-	color:#0000FF;
 }
 
 #sao:hover, #hide_incoming:hover {	
