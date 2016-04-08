@@ -36,6 +36,9 @@ $(document).ready(function() {
             }
 		});
 
+    	//for the card(s?) that appear on mutliple pages, clone them here
+		$('#transcripts_clone').load("records.html #transcripts");
+
 		$('body').fadeIn("fast");
 	});
 });
