@@ -19,7 +19,7 @@ $(document).ready(function() {
 			alert("No SAO Form found");
 		});
 
-    	$('#drop_courses').click(function() {
+    	$(document).on('click', '#drop_courses', function() {
             var msg = "Are you sure you wish to drop the following course(s)?";
             $('.droppable').each(function(i, obj) {
                 if ($(this).is(":checked")) {
@@ -35,9 +35,6 @@ $(document).ready(function() {
                 alert("I'm sorry to hear that.");
             }
 		});
-
-    	//for the card(s?) that appear on mutliple pages, clone them here
-		$('#transcripts_clone').load("records.html #transcripts");
 
 		$('body').fadeIn("fast");
 	});
